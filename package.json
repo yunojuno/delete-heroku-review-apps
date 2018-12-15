@@ -1,0 +1,27 @@
+{
+  "name": "delete-heroku-review-apps",
+  "version": "0.0.1",
+  "description": "https://github.com/yunojuno/delete-heroku-review-apps.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "@slack/client": "^4.8.0",
+    "heroku-client": "^3.0.7"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://github.com/yunojuno/delete-heroku-review-apps"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express",
+    "heroku"
+  ]
+}
