@@ -8,7 +8,7 @@ const app = express();
 app.get('/delete', function(request, response) {
   console.log("Deleting review apps");
   heroku.deleteReviewApps();
-  response.send("Deleting review apps. Output will be posted to Slack.");
+  response.send("Deleting review apps. Output will be posted to Slack (" + process.env.SLACK_CHANNEL + ").");
 });
 
 
