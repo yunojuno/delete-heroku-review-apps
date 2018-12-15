@@ -1,7 +1,7 @@
 {
-  "name": "stop-herokui-review-apps",
+  "name": "delete-heroku-review-apps",
   "version": "0.0.1",
-  "description": "A simple Node app to stop Heroku review apps.",
+  "description": "Glitch project used to schedule deletion of Heroku review apps.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -15,12 +15,13 @@
     "node": "8.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/hello-express"
+    "url": "https://github.com/yunojuno/delete-heroku-review-apps"
   },
   "license": "MIT",
   "keywords": [
     "node",
     "glitch",
-    "express"
+    "express",
+    "heroku"
   ]
 }

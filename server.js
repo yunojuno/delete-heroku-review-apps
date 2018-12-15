@@ -1,12 +1,9 @@
-// server.js
-// where your node app starts
 const heroku = require('./src/heroku');
 const express = require('express');
 const app = express();
 
 
 app.get('/delete', function(request, response) {
-  console.log("Deleting review apps");
   heroku.deleteReviewApps();
   response.send("Deleting review apps. Output will be posted to Slack (" + process.env.SLACK_CHANNEL + ").");
 });

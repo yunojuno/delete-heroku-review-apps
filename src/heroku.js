@@ -36,7 +36,7 @@ const deleteReviewApp = review_app => {
 
 const logMessage = message => {
   console.log(message);
-  slack.sendChannelMessage(process.env.SLACK_CHANNEL, message);
+  slack.sendChannelMessage('#junobot', message);
 }
 
 module.exports = {
