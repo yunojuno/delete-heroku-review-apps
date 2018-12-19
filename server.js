@@ -1,4 +1,5 @@
 const heroku = require('./src/heroku');
+const logging = require('./src/logging');
 const express = require('express');
 const app = express();
 
@@ -10,6 +11,6 @@ app.get('/delete', function(request, response) {
 
 
 // listen for requests :)
-const listener = app.listen(process.env.PORT, function() {
-  console.log('Your app is listening on port ' + listener.address().port);
+app.listen(process.env.PORT, function() {
+  logging.debug(`Your app is listening on port ${process.env.PORT}`);
 });
